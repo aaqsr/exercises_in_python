@@ -41,14 +41,15 @@ if ((month == "February") and (dyear % 4 == 0 and not (dyear % 100 == 0 and dyea
 # to calc total number of days
 tdays = monthdays[month] + (day-1) + ((year-1900)*365) + leapcomp
 
-# to determine which day that is
-c = 0
-for i in range(tdays):
-    c += 1
-    if (c>6):
-        c = 0
+# to determine which day that is (old version)
+# c = 0
+# for i in range(tdays):
+#    c += 1
+#    if (c>6):
+#        c = 0
+# print(weekdays[c])
 
-# print
-print(weekdays[c])
+# better way to determine the day
+print(weekdays[tdays%7])
 
 # issue with February 29, 1948 perhaps cause the date itself is leap
