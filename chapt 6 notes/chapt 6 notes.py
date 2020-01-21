@@ -17,3 +17,16 @@ x = np.linspace(0,4*np.pi, 129)
 y = np.sin(x)   
 plt.plot(x,y)
 plt.show()
+
+'''Test''' 
+x = np.linspace(-2*np.pi,2*np.pi, 129)
+y = np.sin(x)
+plt.plot(x,y,'b-', label='Theory' )
+
+xdata, ydata = np.loadtxt('sin.csv', unpack=True, skiprows=1, delimiter=',') # take input from file
+plt.plot(xdata, ydata, 'go', label="Data")  # plots the data from file; the g is for green, o is for circle
+
+plt.axhline(color='gray', zorder=-1)
+plt.axvline(color='gray', zorder=-1)
+plt.show()  
+
