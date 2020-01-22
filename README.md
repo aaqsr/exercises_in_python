@@ -1,3 +1,4 @@
 My rather basic solutions and notes to the exercises and chapters of Introduction to Python for Science by David J. Pine. This is in no way intended to replicate his work in any way shape or form. I am simply posting my solutions of the exercises posed in the book, as a beginner to python. My solutions may not be the most efficient way. They are simply what I came up with.
 
 My notes for every chapter are also included if that is of interest to anyone for any reason.
+Edit: Notes are no longer included in newer commits and no longer a part of this repo. If someone wants to look at the old unfinished ones then check previous commits.
